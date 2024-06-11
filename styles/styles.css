@@ -1,0 +1,109 @@
+:root{
+    --primary-color:#A3D8F4;
+    --secundary-color: #ffD1DC;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Aqui empieza */
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-container{
+    height: 100vh;
+    background: linear-gradient(135deg, #FDEB71 0%, #f7c6b3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements-container{
+    min-height: 600px;
+    min-width: 400px;
+    padding: 30px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#333333;
+    gap: 20px;
+}
+
+.elements-container h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.elements-container ul {
+    min-height: 500px;
+    width: 350px;
+    padding: 10px 0;
+    
+}
+.elements-container button{
+    padding: 16px 28px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 12px;
+    color: #333333;
+    font-weight:900;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.elements-container button:hover{
+    transform: scale(1.05);
+}
+#lista li{
+    list-style:disc;
+    font-size: 30px;
+    margin-bottom: 16px;
+    
+}
